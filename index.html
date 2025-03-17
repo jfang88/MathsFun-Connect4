@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect 4 - Times Tables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Player Name Input Page -->
+  <div id="player-input-page">
+    <h1>Welcome to Connect 4 - Times Tables</h1>
+    <p>Enter Player Names to Start:</p>
+    <label for="player1-name">Player 1 (Red): </label>
+    <input type="text" id="player1-name" placeholder="Player 1 Name"><br><br>
+    <label for="player2-name">Player 2 (Yellow): </label>
+    <input type="text" id="player2-name" placeholder="Player 2 Name"><br><br>
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <!-- Main Game Page -->
+  <div id="game-page" style="display: none;">
+    <!-- Question and Player Turn -->
+    <div id="top-section">
+      <p id="player-turn"></p>
+      <p id="question"></p>
+      <input type="text" id="answer" placeholder="Your answer">
+      <button id="submit">Submit Answer</button>
+    </div>
+    
+    <!-- Game Board -->
+    <div id="game-board"></div>
+    
+    <!-- New Game Button -->
+    <button id="new-game">New Game</button>
+
+    <!-- Title -->
+    <h2>Connect 4 - Times Tables</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
